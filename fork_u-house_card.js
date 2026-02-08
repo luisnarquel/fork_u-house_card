@@ -115,17 +115,17 @@ class ForkUHouseCard extends HTMLElement {
     static getStubConfig() {
       return {
         language: "pt",
-        image_path: "/local/community/fork_u-house_card/images/",
-        
+        image_path: "/local/fork_u-house_card/images/",
+
         // Entities
         weather_entity: "weather.forecast_home",
         season_entity: "sensor.season",
         sun_entity: "sun.sun",
         cloud_coverage_entity: "sensor.openweathermap_cloud_coverage",
         party_mode_entity: "input_boolean.gaming_mode",  // enables gaming ambient
-        
+
         // AI Sensors
-        aqi_entity: "sensor.waqi_pm2_5", 
+        aqi_entity: "sensor.waqi_pm2_5",
         pollen_entity: "sensor.pollen_level", // Returns: 'High', 'Moderate', or number
         uv_entity: "sensor.uv_index",
         wind_speed_entity: "sensor.wind_speed",
@@ -170,7 +170,7 @@ class ForkUHouseCard extends HTMLElement {
 
      // --- NOWA LOGIKA WYBORU OBRAZKA ---
     _calculateImage() {
-        const path = this._config.image_path || "/local/community/fork_u-house_card/images/";
+        const path = this._config.image_path || "/local/fork_u-house_card/images/";
         
         // 1. Pora Dnia
         const sunState = this._hass.states[this._config.sun_entity || 'sun.sun']?.state || 'above_horizon';
