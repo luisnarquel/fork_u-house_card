@@ -88,7 +88,7 @@ Draw an igloo on the plot, a snowman draped with colorful fairy lights (light re
 * **🌗 Day/Night Cycle:** The house image dims automatically at night to match your dashboard's theme.
 * **🎮 Gaming Ambient Mode:** A toggleable immersive mode that overlays soft, floating ambient lights (Magenta/Cyan/Purple) over the house image.
 * **🌡️ Room Badges:** Positionable temperature badges for specific rooms overlaid on your house image.
-* **🌍 Multi-language:** Built-in support for **English** and **Polish** (configurable).
+* **🌍 Multi-language:** Built-in support for **English** and **Portuguese** (configurable).
 
 ## 📥 Installation
 
@@ -118,7 +118,7 @@ Add the following to your Dashboard YAML configuration.
 ```yaml
 type: custom:fork-u-house-card
 title: "My Residence" # Optional title (visual only)
-language: "en"        # Options: 'en', 'pl'
+language: "en"        # Options: 'en', 'pt'
 
 img_winter_day_fog: true    # will look for winter_fog_day.png
 img_winter_night_fog: false # will not look for winter_night_fog.png and fallback to winter_day.png

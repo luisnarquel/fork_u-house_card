@@ -47,45 +47,45 @@ const TRANSLATIONS = {
         
         advice_gaming: "🎮 GAMING MODE: Immersive lighting active. Notifications silenced.",
     },
-    pl: {
-        loading: "Analizuję dane środowiskowe...",
-        home_median: "Dom",
+    pt: {
+        loading: "A analisar dados ambientais...",
+        home_median: "Casa",
         
-        // Warunki
-        clear_night: "Bezchmurnie", cloudy: "Pochmurno", fog: "Mgła", hail: "Grad",
-        lightning: "Burza", lightning_rainy: "Burza z deszczem",
-        partlycloudy: "Częściowe zachm.", pouring: "Ulewa", rainy: "Deszcz",
-        snowy: "Śnieg", sunny: "Słonecznie", windy: "Wietrznie",
+        // Condições
+        clear_night: "Noite Limpa", cloudy: "Nublado", fog: "Nevoeiro", hail: "Granizo",
+        lightning: "Trovoada", lightning_rainy: "Trovoada com Chuva",
+        partlycloudy: "Parcialmente Nublado", pouring: "Chuva Forte", rainy: "Chuvoso",
+        snowy: "Nevado", sunny: "Sol", windy: "Ventoso",
         
-        // --- AI NARRACJA ---
+        // --- NARRATIVA IA ---
         
-        // 1. ZAGROŻENIE
-        alert_storm: "<span class='value-pill pill-1'>⚠️ <b>OSTRZEŻENIE KRYTYCZNE</b></span>  W pobliżu wykryto burzę. Spodziewaj się wyładowań i silnego wiatru. Zabezpiecz ogród i pozostań w domu.",
+        // 1. PERIGO
+        alert_storm: "<span class='value-pill pill-1'>⚠️ <b>ALERTA CRÍTICO</b></span>  Detetada uma trovoada nas proximidades. Espere descargas elétricas e vento forte. Proteja o jardim e permaneça em casa.",
         
-        // 2. ZDROWIE (SMOG / PYŁKI)
-        alert_aqi_bad: "<span class='value-pill pill-1'>😷 <b>ALARM SMOGOWY</b></span>  Jakość powietrza jest fatalna <span class='value-pill'>PM2.5: <b>{val}</b></span>. Wyjście na zewnątrz grozi problemami oddechowymi. Zamknij okna i włącz oczyszczacz.",
-        alert_aqi_mod: "<span class='value-pill pill-1'>😶 <b>OSTRZEŻENIE</b></span>  Podwyższone stężenie pyłów <span class='value-pill'>PM2.5: <b>{val}</b></span>. Jakość powietrza jest przeciętna. Osoby wrażliwe powinny unikać wysiłku na zewnątrz.",
-        alert_pollen: "<span class='value-pill pill-1'>🤧 <b>ALARM DLA ALERGIKÓW</b></span>  Wykryto bardzo wysokie stężenie pyłków. Przygotuj leki przeciwhistaminowe i unikaj wietrzenia sypialni.",
+        // 2. SAÚDE (SMOG / PÓLEN)
+        alert_aqi_bad: "<span class='value-pill pill-1'>😷 <b>ALERTA DE SMOG</b></span>  A qualidade do ar é péssima <span class='value-pill'>PM2.5: <b>{val}</b></span>. Sair para o exterior pode causar problemas respiratórios. Feche as janelas e ligue o purificador.",
+        alert_aqi_mod: "<span class='value-pill pill-1'>😶 <b>AVISO</b></span>  Concentração de partículas elevada <span class='value-pill'>PM2.5: <b>{val}</b></span>. A qualidade do ar é razoável. Pessoas sensíveis devem evitar esforço ao ar livre.",
+        alert_pollen: "<span class='value-pill pill-1'>🤧 <b>ALERTA PARA ALÉRGICOS</b></span>  Detetada concentração muito elevada de pólen. Prepare medicamentos anti-histamínicos e evite arejar o quarto.",
         
-        // 3. PROGNOZA (NADCHODZĄCE)
-        advice_rain_soon: "<span class='value-pill pill-1'>☂️ <b>WEŹ PARASOL</b></span>  Nadciągają opady deszczu. Spodziewaj się ich ok. godziny <span class='value-pill'><b>{time}</b></span>. Prognozowane <span class='value-pill'><b>{val}</b> mm</span>",
-        advice_snow_soon: "<span class='value-pill pill-1'>❄️ <b>ZACHOWAJ OSTROŻNOŚĆ</b></span>  Ok. godziny <span class='value-pill'><b>{time}</b></span> zacznie padać śnieg. Warunki drogowe mogą się gwałtownie pogorszyć.",
+        // 3. PREVISÃO (A CHEGAR)
+        advice_rain_soon: "<span class='value-pill pill-1'>☂️ <b>LEVE GUARDA-CHUVA</b></span>  Aproxima-se chuva. Espete-a por volta das <span class='value-pill'><b>{time}</b></span>. Previstos <span class='value-pill'><b>{val}</b> mm</span>",
+        advice_snow_soon: "<span class='value-pill pill-1'>❄️ <b>TENHA CUIDADO</b></span>  Por volta das <span class='value-pill'><b>{time}</b></span> começará a nevar. As condições rodoviárias podem deteriorar-se rapidamente.",
         
-        // 4. AKTUALNA POGODA
-        advice_rain_now: "<span class='value-pill pill-1'>🌧️ <b>DESZCZ</b></span>  Aktualny opad to <span class='value-pill'><b>{val}</b> mm</span>. Jest mokro i ślisko. Jeśli musisz wyjść, koniecznie weź kurtkę przeciwdeszczową.",
-        advice_snow_now: "<span class='value-pill pill-1'>🌨️ <b>ŚNIEG</b></span>  Na zewnątrz sypie śnieg. Jest <span class='value-pill'><b>malowniczo</b></span>, ale pamiętaj o ciepłym ubraniu i czapce.",
+        // 4. TEMPO ATUAL
+        advice_rain_now: "<span class='value-pill pill-1'>🌧️ <b>CHUVA</b></span>  A precipitação atual é de <span class='value-pill'><b>{val}</b> mm</span>. Está molhado e escorregadio. Se precisar de sair, leve impermeável.",
+        advice_snow_now: "<span class='value-pill pill-1'>🌨️ <b>NEVE</b></span>  Está a nevar lá fora. Está <span class='value-pill'><b>pinturesco</b></span>, mas lembre-se de vestir roupa quente e um chapéu.",
         
         // 5. UV
-        alert_uv_high: "<span class='value-pill pill-1'>☀️ <b>PROMIENIOWANIE</b></span>  Indeks UV wynosi <span class='value-pill'><b>{val}</b></span>. Skóra może ulec poparzeniu. Koniecznie użyj kremu z filtrem i okularów przeciwsłonecznych.",
+        alert_uv_high: "<span class='value-pill pill-1'>☀️ <b>RADIAÇÃO</b></span>  O índice UV é de <span class='value-pill'><b>{val}</b></span>. A pele pode queimar. Use obrigatoriamente protetor solar e óculos de sol.",
         
-        // 6. TEMPERATURA + WIATR
-        advice_cold_wind: "<span class='value-pill pill-1'>🥶 <b>WIATR</b></span>  Jest <span class='value-pill'><b>{val}</b> °C</span>, ale silny wiatr sprawia, że temperatura odczuwalna jest znacznie niższa. Ubierz się „na cebulkę” i chroń uszy.",
-        advice_cold: "<span class='value-pill pill-1'>🧣 <b>ZIMNO</b></span>  Temperatura wynosi <span class='value-pill'><b>{val}</b> °C</span>. Ubierz ciepłą kurtkę przed wyjściem. Warto sprawdzić szczelność okien.",
+        // 6. TEMPERATURA + VENTO
+        advice_cold_wind: "<span class='value-pill pill-1'>🥶 <b>VENTO</b></span>  Estão <span class='value-pill'><b>{val}</b> °C</span>, mas o vento forte faz com que a sensação térmica seja muito inferior. Vista-se em camadas e proteja os ouvidos.",
+        advice_cold: "<span class='value-pill pill-1'>🧣 <b>FRIO</b></span>  A temperatura é de <span class='value-pill'><b>{val}</b> °C</span>. Vista um casaco quente antes de sair. Vale a pena verificar a estanquicidade das janelas.",
         
-        advice_hot: "<span class='value-pill pill-1'>🔥 <b>GORĄC</b></span>  Temperatura osiągnęła <span class='value-pill'><b>{val}</b> °C</span>. Unikaj słońca w godzinach szczytu, pij dużo wody i zasłoń rolety.",
-        advice_nice: "😎 Pogoda jest stabilna, temperatura przyjemna <span class='value-pill'><b>{val}</b> °C</span>. To <span class='value-pill'>idealny</span> moment na spacer lub przewietrzenie mieszkania.",
+        advice_hot: "<span class='value-pill pill-1'>🔥 <b>QUENTE</b></span>  A temperatura atingiu <span class='value-pill'><b>{val}</b> °C</span>. Evite o sol nas horas de ponta, beba muita água e feche as cortinas.",
+        advice_nice: "😎 O tempo está estável, temperatura agradável <span class='value-pill'><b>{val}</b> °C</span>. É um momento <span class='value-pill'>ideal</span> para um passeio ou arejar a casa.",
         
-        advice_gaming: "<span class='value-pill pill-1'>🎮 <b>TRYB IMERSYJNY</b></span>  Tryb kina lub gry aktywny. Sterowanie <span class='value-pill'><b>AmbiLight</b></span> włączone.",
+        advice_gaming: "<span class='value-pill pill-1'>🎮 <b>MODO IMERSIVO</b></span>  Modo de cinema ou jogo ativo. Controlo <span class='value-pill'><b>AmbiLight</b></span> ligado.",
     }
 };
 
@@ -114,7 +114,7 @@ class ForkUHouseCard extends HTMLElement {
   
     static getStubConfig() {
       return {
-        language: "pl",
+        language: "pt",
         image_path: "/local/community/fork_u-house_card/images/",
         
         // Entities
