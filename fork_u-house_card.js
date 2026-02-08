@@ -115,7 +115,7 @@ class ForkUHouseCard extends HTMLElement {
     static getStubConfig() {
       return {
         language: "pt",
-        image_path: "/local/fork_u-house_card/images/",
+        image_path: "/local/images/fork_u-house_card/",
 
         // Entities
         weather_entity: "weather.forecast_home",

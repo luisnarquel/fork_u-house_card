@@ -1,8 +1,5 @@
 {
   "name": "Fork U-House Card",
   "render_readme": true,
-  "filename": "fork_u-house_card.js",
-  "include": [
-    "www/fork_u-house_card/images/**"
-  ]
+  "filename": "fork_u-house_card.js"
 }
